@@ -22,6 +22,16 @@ const mainpage = () => {
                     onCustomClick={()=>setShowf(true)}>
                         preview
                     </CustomButton> 
+
+                    <CustomButton tip='navigate' location='/mainpage/prevTudor' className='mr-8 border-2 bg-blue-200 rounded-lg text-lg pt-1 pb-1 pl-2 pr-2' >
+                       Tudor CV
+                    </CustomButton>
+                    <CustomButton  
+                    tip='prev' 
+                    className='mr-8 border-2 bg-blue-200 rounded-lg pt-1 pb-1 pl-2 pr-2'
+                    onCustomClick={()=>setShowf(true)}>
+                        preview
+                    </CustomButton> 
                     
                     
                 </li>   
