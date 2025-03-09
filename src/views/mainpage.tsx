@@ -4,6 +4,9 @@ import { useState } from "react";
 
 const mainpage = () => {
   const [Showf, setShowf] = useState(false);
+  const [Showf, setShowf] = useState([false, ""]);
+  let iframeLocation = "";
+  Showf[0] === true ? (iframeLocation = "/mainpage/" + Showf[1]) : "";
   return (
     <>
       <div className="bg-slate-500 flex flex-row">
@@ -18,6 +21,14 @@ const mainpage = () => {
               >
                 Cristi CV
               </CustomButton>
+
+              <CustomButton
+                tip="prev"
+                className="mr-8 border-2 bg-blue-200 rounded-lg pt-1 pb-1 pl-2 pr-2"
+                onCustomClick={() => setShowf([true, "prev1"])}
+              >
+                preview
+              </CustomButton>
               <CustomButton
                 tip="prev"
                 className="mr-8 border-2 bg-blue-200 rounded-lg pt-1 pb-1 pl-2 pr-2"
@@ -31,6 +42,7 @@ const mainpage = () => {
         <div className="basis-2/3 m-4 w-52 min-h-[640px] bg-slate-100 border-2 border-slate-100 rounded-lg flex items-center justify-center">
           {Showf && (
             <iframe src="/mainpage/prev1" width="95%" height="600px"></iframe>
+            <iframe src={iframeLocation} width="95%" height="600px"></iframe>
           )}
         </div>
       </div>
