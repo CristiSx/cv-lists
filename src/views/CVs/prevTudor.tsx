@@ -123,9 +123,7 @@ const PrevTudor = () => {
             </div>
             <div className="flex justify-start items-center ml-16">
               <hr className="border-t-2 border-black w-[30mm]" />
-                <h1 className="">  
-                    Etti
-                </h1>
+              <h1 className="">Etti</h1>
             </div>
 
             {/*sectiune exeperienta*/}
