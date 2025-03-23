@@ -1,18 +1,19 @@
-import React from 'react'
-import CustomButton from '../components/customButton'
-import { useState } from 'react'
+import React from "react";
+import CustomButton from "../components/customButton";
+import { useState } from "react";
 
 const mainpage = () => {
+
     const [Showf, setShowf] = useState(false); 
     const [previewPath, setPreviewPath] = useState("");
-    
     const cvItems = [
         { name: "Cristi CV", path: "/mainpage/prev1" },
         { name: "Test CV", path: "/mainpage/prev2" },
       ];
-  return (
 
+  return (
     <>
+
     <div className='bg-slate-500 flex flex-row'>
         <div className='basis-1/3 m-4 w-52 min-h-[640px] bg-slate-100 border-2 border-slate-100 rounded-lg flex-column items-top justify-center '>
             <p className='flex justify-center m-6'>Lista</p>
@@ -44,9 +45,9 @@ const mainpage = () => {
         <div className='basis-2/3 m-4 w-52 min-h-[640px] bg-slate-100 border-2 border-slate-100 rounded-lg flex items-center justify-center'>
        {Showf&&<iframe src={previewPath} width="95%" height="600px"></iframe>}
         </div>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default mainpage
+export default mainpage;

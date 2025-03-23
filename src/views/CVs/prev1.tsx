@@ -56,7 +56,7 @@ const prev1 = () => {
                   <div className="ml-2 "><Bar length='100px' slength='100px' /></div>
                 </li>
                 <li className='mt-1 flex items-center justify-start text-white text-m'>
-                  <span className='text-white text-sm w-[50px]' >Rusă</span>
+                  <span className='text-white text-sm w-[50px]' >Rusa</span>
                   <div className="ml-2 "><Bar length='100px' slength='25px' /></div>
                 </li>
               </ul>
